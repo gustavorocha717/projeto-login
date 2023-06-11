@@ -1,7 +1,56 @@
 @charset "UTF-8";
 
+/* Paleta
+#90B555 - Verde-Escuro
+#B9E86D - Verde-Claro
+*/
+
 *{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-image: linear-gradient(#90B555, #B9E86D, #90B555);
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    position: absolute;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-shadow: 0px 0px 200px rgba(0, 0, 0, 0.535);
+}
+
+section#login > div#imagem{
+    display: block;
+    background: #90B555 url(../imagens/img-login.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 250px;
+    
+}
+
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
 }
