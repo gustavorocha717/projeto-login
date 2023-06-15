@@ -28,7 +28,7 @@ section#login{
     position: absolute;
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 530px;
 
     top: 50%;
     left: 50%;
@@ -78,10 +78,25 @@ form > div.campo{
 }
 
 form > div.campo  label > span.material-symbols-outlined {
-    display: flexbox;
+    font-size: 2em;
     color: white;
+    padding-left: 5px;
+    height: 100%;
+    width: 40px;
     
 } 
+
+form > div.campo > input{
+    background-color:#e7ffc1;
+    border-radius: 5px;
+    height: 80%;
+    width: calc(100% - 48px);
+    transform: translateY(-8px);
+
+    border: none;
+}
+
+
 
 form > input[type= submit]{
     display: block;
